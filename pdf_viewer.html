@@ -7,7 +7,14 @@
 </head>
 <body>
     <script>
-        window.location.href = "https://muthus25.github.io/python_playground/twittersentanal_interim.html";
+        function loadPdf(pdfUrl) {
+            window.location.href = pdfUrl;
+        }
+
+        // Redirect to the interim page
+        window.onload = function() {
+            loadPdf('https://muthus25.github.io/python_playground/twittersentanal_interim.html');
+        };
     </script>
 </body>
 </html>
