@@ -6,6 +6,12 @@
     <title>PDF Viewer</title>
 </head>
 <body>
-    <iframe src="https://raw.githubusercontent.com/muthus25/python_playground/main/Twitter%20Sentiment%20Analysis_Roe%20vs%20Wade.pdf" width="100%" height="600px" frameborder="0" scrolling="auto"></iframe>
+    <iframe id="pdfViewer" src="" width="100%" height="600px" frameborder="0" scrolling="auto"></iframe>
+
+    <script>
+        function loadPdf(pdfUrl) {
+            document.getElementById('pdfViewer').src = pdfUrl;
+        }
+    </script>
 </body>
 </html>
